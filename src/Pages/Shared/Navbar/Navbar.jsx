@@ -15,7 +15,7 @@ const Navbar = () => {
         <path strokeLinecap="round" strokeLinejoin="round" d={path} />
       </svg>
       {badge !== undefined && (
-        <span className="absolute -top-1 -right-2 bg-[#00a191] text-white text-[10px] font-bold rounded-full w-4 h-4 flex items-center justify-center border border-white">
+        <span className="absolute -top-1 -right-2 bg-[#b400dd] text-white text-[10px] font-bold rounded-full w-4 h-4 flex items-center justify-center border border-white">
           {badge}
         </span>
       )}
@@ -44,7 +44,7 @@ const Navbar = () => {
         {/* Logo */}
             <div className="flex items-center shrink-0">
           <img cl src={pharmacareLogo} alt="PharmaCare Logo" className="w-12 " />
-           <span className="text-2xl font-bold text-[#00a4ad]">PharmaCare</span>
+           <span className="text-2xl font-bold text-[#b400dd]">Medinexa</span>
         </div>
 
         {/* 2. Left NavLinks & Search Area (Flex-1 grows to fill space) */}
@@ -52,7 +52,7 @@ const Navbar = () => {
           {/* Links */}
           <div className="flex items-center gap-6">
             {navLinks.map((link) => (
-              <NavLink key={link.name} to={link.href} className="text-gray-600 font-medium hover:text-[#00a191] whitespace-nowrap">
+              <NavLink key={link.name} href={link.href} className="text-gray-600 font-medium hover:text-[#b400dd] whitespace-nowrap">
                 {link.name}
               </NavLink>
             ))}
@@ -63,9 +63,9 @@ const Navbar = () => {
             <input 
               type="text" 
               placeholder="Search..." 
-              className="w-full bg-gray-100 border-none rounded-full py-2 pl-4 pr-10 text-sm focus:ring-2 focus:ring-[#00a191] transition-all outline-none"
+              className="w-full bg-gray-100 border-none rounded-full py-2 pl-4 pr-10 text-sm focus:ring-2 focus:ring-[#b400dd] transition-all outline-none"
             />
-            <button className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 group-focus-within:text-[#00a191]">
+            <button className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 group-focus-within:text-[#b400dd]">
               <Icon path={paths.search} className="w-5 h-5" />
             </button>
           </div>
@@ -75,15 +75,15 @@ const Navbar = () => {
         <div className="flex items-center gap-5 text-gray-600">
           <div className="hidden lg:flex flex-col text-right leading-tight mr-2">
             <p className="text-[10px] text-gray-400 uppercase font-semibold">Help</p>
-            <p className="text-[#00a191] font-bold text-xs whitespace-nowrap">+8801XXXXXXXX</p>
+            <p className="text-[#b400dd] font-bold text-xs whitespace-nowrap">+8801XXXXXXXX</p>
           </div>
           
-          {login &&<><button className="hover:text-[#00a191] transition-colors"><Icon path={paths.user} /></button>
-          <button className="hover:text-[#00a191] transition-colors"><Icon path={paths.heart} badge={0} /></button>
-          <button className="hover:text-[#00a191] transition-colors"><Icon path={paths.cart} badge={0} /></button>
+          {login &&<><button className="hover:text-[#b400dd] transition-colors"><Icon path={paths.user} /></button>
+          <button className="hover:text-[#b400dd] transition-colors"><Icon path={paths.heart} badge={0} /></button>
+          <button className="hover:text-[#b400dd] transition-colors"><Icon path={paths.cart} badge={0} /></button>
             </>}
             {!login &&<>
-            <button className="hover:text-white bg-[#00a191] text-white p-2 font-semibold hover:bg-black transition-duration-300 px-6  cursor-pointer uppercase rounded-3xl transition-colors">Login</button>
+            <button className="hover:text-white bg-[#b400dd] text-white p-2 font-semibold hover:bg-black transition-duration-300 px-6  cursor-pointer uppercase rounded-3xl transition-colors">Login</button>
             </>}
 
           {/* Mobile Toggle */}
@@ -103,7 +103,7 @@ const Navbar = () => {
           ))}
           <div className="relative border rounded-full overflow-hidden">
             <input type="text" className="w-full px-4 py-2 text-sm bg-gray-50" placeholder="Search..." />
-            <button className="absolute right-3 top-2 text-[#00a191]"><Icon path={paths.search} className="w-5 h-5" /></button>
+            <button className="absolute right-3 top-2 text-[#b400dd]"><Icon path={paths.search} className="w-5 h-5" /></button>
           </div>
         </div>
       )}

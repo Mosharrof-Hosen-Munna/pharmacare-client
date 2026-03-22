@@ -18,8 +18,8 @@ const Footer = () => {
           {/* Logo & Description */}
           <div className="lg:col-span-2 pr-8">
              <div className="flex items-center gap-2 shrink-0">
-                      <img cl src={pharmacareLogo} alt="PharmaCare Logo" className="w-12 " />
-                       <span className="text-2xl font-bold text-[#00a4ad]">PharmaCare</span>
+                      <img src={pharmacareLogo} alt="PharmaCare Logo" className="w-12 " />
+                       <span className="text-2xl font-bold text-[#b400dd]">Medinexa</span>
                     </div>
             <p className="text-gray-500 text-sm leading-relaxed max-w-sm">
              Your health is our priority. We pride ourselves on offering a carefully curated selection of pharmaceutical products, backed by a commitment to exceptional service and professional integrity.
@@ -32,7 +32,7 @@ const Footer = () => {
             <ul className="space-y-4">
               {footerData.quickLinks.map((item) => (
                 <li key={item}>
-                  <a href="#" className="text-gray-500 text-sm hover:text-[#00a191] transition-colors">
+                  <a href="#" className="text-gray-500 text-sm hover:text-[#b400dd] transition-colors">
                     {item}
                   </a>
                 </li>
@@ -46,7 +46,7 @@ const Footer = () => {
             <ul className="space-y-4">
               {footerData.products.map((item) => (
                 <li key={item}>
-                  <a href="#" className="text-gray-500 text-sm hover:text-[#00a191] transition-colors">
+                  <a href="#" className="text-gray-500 text-sm hover:text-[#b400dd] transition-colors">
                     {item}
                   </a>
                 </li>
@@ -61,8 +61,8 @@ const Footer = () => {
               <p>PharmaCare </p>
               <p>Kishoreganj, Dhaka, Bangladesh</p>
               <p>Beside the River side.</p>
-              <p className="pt-2">Call us: <span className="text-[#00a191] font-semibold">+8801XXXXXXXX</span></p>
-              <p>Email: <span className="text-[#00a191] font-semibold">admin@example.com</span></p>
+              <p className="pt-2">Call us: <span className="text-[#b400dd] font-semibold">+8801XXXXXXXX</span></p>
+              <p>Email: <span className="text-[#b400dd] font-semibold">admin@example.com</span></p>
             </div>
           </div>
 
